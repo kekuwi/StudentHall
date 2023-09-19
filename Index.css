@@ -7,6 +7,7 @@
     --text-secondary: #fcfcfc;
     --backgorund-primary: rgb(74, 117, 61);
     --background-secondary: rgb(40, 80, 27);
+    --background-extra: rgb(147, 201, 131);
     --transition-speed: 400ms;
 }
 
@@ -30,6 +31,11 @@ main{
 
 img{
     margin: 1rem;
+}
+
+.nav-border{
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--background-extra) 20%, var(--background-extra) 80%, rgba(0,0,0,0) 100%);
 }
 
 .navbar{
