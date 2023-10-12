@@ -3,58 +3,64 @@
 :root{
     font-size: 16px;
     font-family: "Open Sans";
-    --text-primary: #f0f0f0;
-    --text-secondary: #fcfcfc;
-    --backgorund-primary: rgb(74, 117, 61);
-    --background-secondary: rgb(40, 80, 27);
+    position: relative;
+    --backgorund-primary: #f5f5e1;
+    --background-secondary: #014040;
     --background-extra: rgb(147, 201, 131);
+    --element-primary: #008f8c;
+    --element-secondary: #f27405;
+    --extra: #d2d1c7;
     --transition-speed: 400ms;
 }
 
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
 body{
-    color: var(--text-primary);
-    background: linear-gradient(var(--backgorund-primary) 70%, var(--background-secondary) 100%);
-    margin: 0;
-    padding: 0;
+    width: 100vw;
     height: 100vh;
 }
 
-main{
-    margin-top: 3rem;
-}
-
-img{
-    margin: 1rem;
-}
-
-.nav-border{
-    height: 3px;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--background-extra) 20%, var(--background-extra) 80%, rgba(0,0,0,0) 100%);
-}
-
-.navbar{
-    height: 3rem;
-    width: 100vw;
-}
-
-.navbar-list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+section{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    min-height: 600px;
+    padding: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-primary{
+    background: var(--backgorund-primary);
+}
+
+.bg-secondary{
+    background: var(--background-secondary)
+}
+
+.element-primary{
+    color: var(--element-primary);
+}
+.nav-bar{
+    height: 64px;
+    background: var(--backgorund-primary);
+    align-items: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-flow: column;
+}
+.item-2{
+    grid-column: span 2;
 }
 .nav-item{
-    margin: auto;
-    align-items: center;
+    justify-self: center;
+    
 }
-
-.navbar-list:last-child{
-    align-items: flex-end;
+.nav-border{
+    height: 2px;
+    background: linear-gradient(90deg, var(--backgorund-primary) 0%, var(--extra) 30%, var(--extra) 70%, var(--backgorund-primary) 100%);
+    border-radius: 99999px;
+}
+.curve{
+    position: absolute;
 }
