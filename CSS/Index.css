@@ -1,3 +1,4 @@
+/* //////////////////////CONFIG////////////////////// */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root{
@@ -12,6 +13,7 @@
     --extra: #d2d1c7;
     --transition-speed: 400ms;
 }
+/* //////////////////////CONFIG////////////////////// */
 
 body{
     width: 100vw;
@@ -28,6 +30,10 @@ section{
 
 a{
     text-decoration: none;
+}
+
+.cls-1{
+    fill: var(--element-primary);
 }
 
 .bg-primary{
