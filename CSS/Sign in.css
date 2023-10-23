@@ -1,7 +1,8 @@
 /* //////////////////////CONFIG////////////////////// */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
 
-:root{
+:root {
     font-size: 16px;
     font-family: "Open Sans";
     position: relative;
@@ -14,12 +15,12 @@
     --transition-speed: 400ms;
 }
 
-::placeholder{
+::placeholder {
     color: white;
     opacity: 0.4;
 }
 
-input[type=submit]{
+input[type=submit] {
     color:  var(--background-secondary);
     font-size: 25px;
     font-family: 'Source Sans 3', sans-serif;
@@ -28,14 +29,15 @@ input[type=submit]{
 a {
     color: inherit;
 }
+
 /* //////////////////////CONFIG////////////////////// */
 
-body{
+body {
     background-color: orange;
     overflow-x: hidden;
 }
 
-.logo{
+.logo {
     position: relative;
     margin-top: 30px;
     display: flex;
@@ -43,11 +45,11 @@ body{
     left: 5px;
 }
 
-.img-logo{
+.img-logo {
     fill: white;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +57,7 @@ body{
     height: 100vh;  
 }
 
-.signin-box{
+.signin-box {
     display: flex;
     flex-direction: column;
     width: 411px;
@@ -65,7 +67,7 @@ body{
     box-shadow: -17px 15px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
-.signin{
+.signin {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -75,7 +77,7 @@ body{
     color: white;
 }
 
-.account{
+.account {
     width: 351px;
     height: 430px;
     position: relative;
@@ -83,14 +85,14 @@ body{
     left: 30px;
 }
 
-.username{
+.username {
     position: relative;
     font-size: 24px;    
     color: white;
     font-family: 'Source Sans 3', sans-serif;
 }
 
-.user-img-input{
+.user-img-input {
     position: relative;
     top: 10px;
     display: flex;
@@ -98,14 +100,14 @@ body{
     gap: 10px;
 }
 
-.user-img{
+.user-img {
     position: relative;
     left: 3px;
     width: 10px;
     fill: white;
 }
 
-.user-input{
+.user-input {
     font-family: 'Source Sans 3', sans-serif;
     width: 326px;
     font-size: 14px;
@@ -116,7 +118,7 @@ body{
     color: white;
 }
 
-.password{
+.password {
     position: relative;
     top: 30px;
     font-size: 24px;
@@ -124,7 +126,7 @@ body{
     font-family: 'Source Sans 3', sans-serif;
 }
 
-.pass-img-input{
+.pass-img-input {
     position: relative;
     top: 40px;
     display: flex;
@@ -132,14 +134,14 @@ body{
     gap: 1px;
 }
 
-.pass-img{
+.pass-img {
     position: relative;
     left: -3px;
     width: 20px;
     fill: white;
 }
 
-.pass-input{
+.pass-input {
     font-family: 'Source Sans 3', sans-serif;
     width: 325px;
     font-size: 14px;
@@ -150,7 +152,7 @@ body{
     color: white;
 }
 
-.bird-brain{
+.bird-brain {
     position: relative;
     display: flex;
     top: 50px;
@@ -160,7 +162,7 @@ body{
     gap: 127px;
 }
 
-.signin-with{
+.signin-with {
     position: relative;
     display: flex;
     justify-content: center;
@@ -171,7 +173,7 @@ body{
     color: white;
 }
 
-.method{
+.method {
     position: relative;
     display: flex;
     top: 95px;
@@ -180,11 +182,11 @@ body{
     gap: 20px;
 }
 
-.google-link{
+.google-link {
     text-decoration: none;
 }
 
-.sphere1{
+.sphere1 {
     background-color: white;
     width: 156px;
     height: 50px;
@@ -196,11 +198,11 @@ body{
     gap: 10px;
 }
 
-.microsoft-link{
+.microsoft-link {
     text-decoration: none;
 }
 
-.sphere2{
+.sphere2 {
     background-color: white;
     width: 156px;
     height: 50px;
@@ -212,14 +214,14 @@ body{
     gap: 10px; 
 }
 
-.button{
+.button {
     position: relative;
     display: flex;
     top: 150px;
     justify-content: center;
 }
 
-.signin-button{
+.signin-button {
     background-color: white;
     width: 266px;
     height: 39px;
@@ -227,7 +229,7 @@ body{
     border-radius: 24px;
 }
 
-:hover.signin-button{
+:hover.signin-button {
     cursor: pointer;
     background-color: var(--element-secondary);
     color: white;
