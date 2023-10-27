@@ -6,7 +6,7 @@
     font-size: 16px;
     font-family: "Open Sans";
     position: relative;
-    --backgorund-primary: #f5f5e1;
+    --backgorund-primary: #fff;
     --background-secondary: #014040;
     --background-extra: rgb(147, 201, 131);
     --element-primary: #008f8c;
@@ -15,13 +15,29 @@
     --transition-speed: 400ms;
 }
 
+.bg-primary {
+    background: var(--backgorund-primary);
+}
+
+.bg-secondary {
+    background: var(--background-secondary)
+}
+
+.element-primary {
+    color: var(--element-primary);
+}
+
+.element-secondary {
+    color: var(--element-secondary);
+}
+
 ::placeholder {
     color: white;
     opacity: 0.4;
 }
 
 input[type=submit] {
-    color:  var(--background-secondary);
+    color: #014040;
     font-size: 25px;
     font-family: 'Source Sans 3', sans-serif;
 }
@@ -30,49 +46,73 @@ a {
     color: inherit;
 }
 
-/* //////////////////////CONFIG////////////////////// */
-
-body {
-    background-color: orange;
-    overflow-x: hidden;
+.flex{
+    display: flex;
 }
 
-.logo {
-    position: relative;
-    margin-top: 30px;
+.flex-center {
     display: flex;
     justify-content: center;
-    left: 5px;
 }
 
-.img-logo {
-    fill: white;
-}
-
-.container {
+.flex-center-all {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;  
 }
 
-.signin-box {
+.flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.pos-relat {
+    position: relative;
+}
+
+.no-text-decor{
+    text-decoration: none;
+}
+
+.font{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.fill-white{
+    fill: white;
+}
+
+/* //////////////////////CONFIG////////////////////// */
+/* ///////////////////////CODE/////////////////////// */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: orange;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.signin-box {    
+    top: -30px;
     width: 411px;
-    height: 578px;
-    background-color: rgba(0, 143, 140, 1);
-    border-radius: 24px;
-    box-shadow: -17px 15px 0px 0px rgba(0, 0, 0, 0.25);
+    height: 528px;
+    border-radius: 35px;
+    box-shadow: -17px 15px 0px 0px rgba(0, 0, 0, 0.25);    
+    background: var(--element-primary);
 }
 
 .signin {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
     font-size: 48px;
-    font-family: 'Source Sans 3', sans-serif;
     font-weight: bold;
     color: white;
 }
@@ -80,149 +120,74 @@ body {
 .account {
     width: 351px;
     height: 430px;
-    position: relative;
     top: 50px;
     left: 30px;
 }
 
 .username {
-    position: relative;
-    font-size: 24px;    
+    font-size: 24px;        
     color: white;
-    font-family: 'Source Sans 3', sans-serif;
 }
 
 .user-img-input {
-    position: relative;
     top: 10px;
-    display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 
-.user-img {
-    position: relative;
-    left: 3px;
+.user-img {    
     width: 10px;
-    fill: white;
+    left: 3px;
 }
 
 .user-input {
-    font-family: 'Source Sans 3', sans-serif;
     width: 326px;
     font-size: 14px;
-    background: transparent;
     border: none;
     border-bottom: 2px solid white;
     outline: none;
+    background: transparent;
     color: white;
 }
 
 .password {
-    position: relative;
-    top: 30px;
-    font-size: 24px;
+    top: 40px;
+    font-size: 24px;    
     color: white;
-    font-family: 'Source Sans 3', sans-serif;
 }
 
 .pass-img-input {
-    position: relative;
     top: 40px;
-    display: flex;
-    flex-direction: row;
     gap: 1px;
 }
 
-.pass-img {
-    position: relative;
-    left: -3px;
+.pass-img {    
     width: 20px;
+    left: -3px;
     fill: white;
 }
 
-.pass-input {
-    font-family: 'Source Sans 3', sans-serif;
-    width: 325px;
+.pass-input {    
+    width: 325px;    
     font-size: 14px;
-    background: transparent;
     border: none;
     border-bottom: 2px solid white;
     outline: none;
+    background: transparent;
     color: white;
 }
 
-.bird-brain {
-    position: relative;
-    display: flex;
-    top: 50px;
-    font-family: 'Source Sans 3', sans-serif;
+.bird-brain {    
+    top: 50px;    
     font-size: 12px;
+    gap: 127px;    
     color: white;
-    gap: 127px;
-}
-
-.signin-with {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 70px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-.method {
-    position: relative;
-    display: flex;
-    top: 95px;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-.google-link {
-    text-decoration: none;
-}
-
-.sphere1 {
-    background-color: white;
-    width: 156px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    border-radius: 24px;
-    gap: 10px;
-}
-
-.microsoft-link {
-    text-decoration: none;
-}
-
-.sphere2 {
-    background-color: white;
-    width: 156px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    border-radius: 24px;   
-    gap: 10px; 
 }
 
 .button {
-    position: relative;
-    display: flex;
-    top: 150px;
-    justify-content: center;
+    top: 80px;
 }
 
 .signin-button {
-    background-color: white;
     width: 266px;
     height: 39px;
     border: none;
@@ -231,6 +196,38 @@ body {
 
 :hover.signin-button {
     cursor: pointer;
-    background-color: var(--element-secondary);
+    background: var(--element-secondary);
     color: white;
 }
+
+.signin-with {
+    top: 110px;    
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.method {    
+    top: 140px;
+    gap: 20px;
+}
+
+.sphere1 {    
+    width: 156px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 24px;
+    gap: 10px;
+    color: #014040;
+}
+
+.sphere2 {
+    width: 156px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 24px;   
+    gap: 10px;
+    color: #014040;
+}
+
+/* ///////////////////////CODE/////////////////////// */

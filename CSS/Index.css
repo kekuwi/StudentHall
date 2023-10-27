@@ -1,6 +1,7 @@
 /* //////////////////////CONFIG////////////////////// #f5f5e1 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
 
 :root{
     font-size: 16px;
@@ -17,8 +18,8 @@
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 .bg-primary{
@@ -37,35 +38,68 @@ a {
     color: var(--element-secondary);
 }
 
-.nav-item{
+.self-center{
     justify-self: center;
 }
 
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.pos-relat{
+    position: relative;
+}
+
+.pos-abso{
+    position: absolute;
+}
+
+.no-text-decor{
+    text-decoration: none;
+}
+
+.fill-primary{
+    fill: var(--element-primary);
+}
+
+.font{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
 /* //////////////////////CONFIG/////////////////////// */
+/* ///////////////////////CODE//////////////////////// */
 
 body{
     width: 100vw;
     height: 100vh;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    min-height: 600px;
-    padding: 7rem;
-}
-
-.cls-1{
-    fill: var(--element-primary);
-}
-
 .nav-bar{
     height: 64px;
-    background: var(--backgorund-primary);
-    align-items: center;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-flow: column;
+    align-items: center;
+    background: var(--backgorund-primary);
+}
+
+.item-1{
+    right: 60px;
 }
 
 .item-2{
@@ -74,34 +108,32 @@ section{
 
 .item-3{
     width: 150px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .signin{
-    position: relative;
     top: 2.5px;
     padding: 0px;
 }
 
 .signup{
-    position: relative;
-    right: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 65px;
     height: 21px;
+    right: 6px;
+    border-radius: 20px;
     background: var(--element-primary);
     color: white;
-    border-radius: 20px;
 }
 
 .nav-border{
     height: 2px;
-    background: linear-gradient(90deg, var(--backgorund-primary) 0%, var(--extra) 30%, var(--extra) 70%, var(--backgorund-primary) 100%);
     border-radius: 99999px;
+    background: linear-gradient(90deg, var(--backgorund-primary) 0%, var(--extra) 30%, var(--extra) 70%, var(--backgorund-primary) 100%);
+}
+
+section{
+    min-height: 600px;
+    padding: 7rem;
 }
 
 .slogan{
@@ -119,7 +151,8 @@ section{
 }
 
 .txt-2{
-    position: relative;
     top: 5px;
-    font-style: italic;
+
 }
+
+/* ///////////////////////CODE//////////////////////// */
