@@ -1,0 +1,262 @@
+/* //////////////////////CONFIG////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: "Open Sans";
+    position: relative;
+    --backgorund-primary: #fff;
+    --background-secondary: #014040;
+    --background-extra: rgb(147, 201, 131);
+    --element-primary: #008f8c;
+    --element-secondary: #f27405;
+    --extra: #d2d1c7;
+    --transition-speed: 400ms;
+}
+
+.bg-primary {
+    background: var(--backgorund-primary);
+}
+
+.bg-secondary {
+    background: var(--background-secondary)
+}
+
+.element-primary {
+    color: var(--element-primary);
+}
+
+.element-secondary {
+    color: var(--element-secondary);
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.4;
+}
+
+input[type=submit] {
+    color: #014040;
+    font-size: 25px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.pos-relat {
+    position: relative;
+}
+
+.no-text-decor{
+    text-decoration: none;
+}
+
+.font{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.fill-white{
+    fill: white;
+}
+
+/* //////////////////////CONFIG////////////////////// */
+/* ///////////////////////CODE/////////////////////// */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: orange;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.signup-box {    
+    top: -0.5px;
+    width: 411px;
+    height: 588px;
+    border-radius: 35px;
+    box-shadow: -17px 15px 1px 0px rgba(0, 0, 0, 0.25);    
+    background: var(--element-primary);
+}
+
+.signup {
+    margin-top: 30px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.account {
+    width: 351px;
+    height: 430px;
+    top: 50px;
+    left: 30px;
+}
+
+.email {
+    font-size: 24px;        
+    color: white;
+}
+
+.email-img-input {
+    top: 10px;
+    gap: 10px;
+}
+
+.email-img {    
+    width: 10px;
+    left: 3px;
+}
+
+.email-input {
+    width: 326px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.username {
+    top: 30px;
+    font-size: 24px;        
+    color: white;
+}
+
+.user-img-input {
+    top: 30px;
+    gap: 10px;
+}
+
+.user-img {    
+    width: 10px;
+    left: 3px;
+}
+
+.user-input {
+    width: 326px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.password {
+    top: 60px;
+    font-size: 24px;    
+    color: white;
+}
+
+.pass-img-input {
+    top: 62px;
+    gap: 1px;
+}
+
+.pass-img {    
+    width: 20px;
+    left: -3px;
+    fill: white;
+}
+
+.pass-input {    
+    width: 325px;    
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.confirm-password {
+    top: 90px;
+    font-size: 24px;    
+    color: white;
+}
+
+.conf-pass-img-input {
+    top: 90px;
+    gap: 1px;
+}
+
+.conf-pass-img {    
+    width: 20px;
+    left: -3px;
+    fill: white;
+}
+
+.conf-pass-input {    
+    width: 325px;    
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.login {    
+    top: 100px;    
+    font-size: 12px;
+    gap: 127px;    
+    color: white;
+}
+
+.button {
+    top: 150px;
+}
+
+.signup-button {
+    width: 266px;
+    height: 39px;
+    border: none;
+    border-radius: 24px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: -5px 6px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.signup-button:hover {
+    transform: scale(1.05);
+}
+
+.signup-button:active {
+    transform: scale(0.96);
+}
+
+/* ///////////////////////CODE/////////////////////// */
