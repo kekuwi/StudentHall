@@ -98,6 +98,13 @@ body{
     background: var(--backgorund-primary);
 }
 
+#burger{
+    position: absolute;
+    width:  0;
+    height: 0;
+    z-index: 1;
+}
+
 .item-1{
     right: 60px;
     cursor: pointer;
@@ -180,7 +187,14 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
-  #main{
+
+#outer{
+    position: absolute;
+    width: 0;
+    height: o;
+}
+
+#main{
     transition: margin-left .5s;
 }
 
@@ -188,9 +202,14 @@ body{
     grid-column: span 2;
 }
 
+.img-logo{
+    z-index: 1;
+}
+
 .item-3{
     width: 150px;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .signin{
