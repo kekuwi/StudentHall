@@ -89,6 +89,10 @@ body{
     height: 100vh;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .nav-bar{
     height: 64px;
     display: grid;
@@ -119,7 +123,7 @@ body{
     z-index: 1;
     overflow-x: hidden;
     transition: 0.5s;
-    background: var(--background-secondary  );
+    background: var(--element-primary);
     padding-top: 60px;
     
 }
@@ -240,18 +244,12 @@ body{
     background: linear-gradient(90deg, var(--backgorund-primary) 0%, var(--extra) 30%, var(--extra) 70%, var(--backgorund-primary) 100%);
 }
 
-section{
-    min-height: 600px;
-    padding: 7rem;
-}
+section{min-height: 400px;}
 
 .slogan{
     display: block;
     align-items: flex-start;
-}
-
-.curve{
-    position: absolute;
+    margin: 8rem 6rem;
 }
 
 .txt-1{
@@ -259,9 +257,107 @@ section{
     font-size: 30px;
 }
 
-.txt-2{
-    top: 5px;
+.txt-2{top: 5px;}
+/* ///////////////////////CODE//////////////////////// */
 
+/* ======================= BALLS ====================== */
+#ellipse-1{
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    left: 70vw;
+    top: 15vw;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--element-primary);
 }
 
-/* ///////////////////////CODE//////////////////////// */
+#ellipse-2{
+    width: 45rem;
+    height: 45rem;
+    position: absolute;
+    left: 50vw;
+    top: 30vw;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--element-secondary);
+}
+/* ======================= BALLS ====================== */
+
+/* ================== LOWER SECTION =================== */
+
+/* -------------------- SEMANTICS --------------------- */
+article div{
+    background: var(--background-secondary);
+    margin: 0;
+}   
+
+article svg{fill: var(--background-secondary);}
+
+article h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+article p{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+/* -------------------- SEMANTICS --------------------- */
+
+/* ---------------------- CLASS ----------------------- */
+.lower-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh 40vh 40vh;
+    margin-top: -4.7vw;
+}
+
+.lower-item{
+    padding: 0 5rem;
+    align-items: center;
+}
+
+.about-us{
+    text-align: center;
+    margin-top: -5vw;
+}
+
+.feature-header{
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.feature-1{
+    text-align: right;
+}
+
+.feature-2{
+    text-align: left;
+}
+
+.feature-3{
+    text-align: right;
+}
+
+.ex-feature-1{
+    text-align: right;
+}
+
+.ex-feature-2{
+    text-align: left;
+}
+
+.ex-feature-3{
+    text-align: right;
+}
+
+/* ---------------------- CLASS ----------------------- */
+
+/* ----------------------- ID ------------------------- */
+#f-heading{margin-top: 3rem;}
+/* ----------------------- ID ------------------------- */
+
+/* ================== LOWER SECTION =================== */
