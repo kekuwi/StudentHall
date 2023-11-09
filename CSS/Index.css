@@ -217,6 +217,10 @@ body{
     padding: 0px;
 }
 
+.signin:hover{
+    color: var(--element-secondary);
+}
+
 .signup{
     width: 65px;
     height: 21px;
@@ -224,6 +228,10 @@ body{
     border-radius: 20px;
     background: var(--element-primary);
     color: white;
+}
+
+.signup:hover{
+    background: var(--element-secondary);
 }
 
 .nav-border{
