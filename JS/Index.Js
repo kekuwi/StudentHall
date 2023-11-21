@@ -4,8 +4,6 @@ function openNav() {
     document.getElementById("outer").style.width = "100vw";
     document.getElementById("outer").style.height = "100vh";
     document.getElementById("outer").style.marginLeft = "250px";
-    document.getElementById("burger").style.width = "100vw";
-    document.getElementById("burger").style.height = "64px";
     }
 
 function closeNav() {
