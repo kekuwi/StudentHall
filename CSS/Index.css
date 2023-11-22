@@ -278,7 +278,7 @@ section{min-height: 400px;}
 
 .join{
     width: 479px;
-    margin-top: -4.6rem;
+    margin-top: -3.6rem;
     margin-left: 6rem;
     display: flex;
     flex-direction: column;
@@ -297,10 +297,14 @@ section{min-height: 400px;}
     justify-content: center;
 }
 
+.join-btn:hover{
+    background-color: #f27405;
+}
+
 .join-slogan{
     font-size: 13px;
     color: var(--element-primary);
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 /* ///////////////////////CODE//////////////////////// */
@@ -345,7 +349,7 @@ section{min-height: 400px;}
 
 .img-1{
     position: relative;
-    right: 8rem;
+    right: 9rem;
     top: 2.9rem;
     z-index: -1;
 }
