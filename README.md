@@ -8,5 +8,8 @@ Let's make learning more fun!
 
 ##How To Use
 
+###note
+this project is on development process, please be patient.
+
 ##For Business Pruposes
 contact us on: -
