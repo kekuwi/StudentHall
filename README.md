@@ -4,7 +4,7 @@ Let's make learning more fun!
 ***
 
 ## Feature
-1. Assignment Control System
+1. Centralized Assignment Control System
 2. Chat Room
 3. Integrated game system
 
