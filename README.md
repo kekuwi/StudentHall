@@ -6,5 +6,7 @@ Let's make learning more fun!
 2. Chat Room
 3. Integrated game system
 
+##How To Use
+
 ##For Business Pruposes
-contact us on:
+contact us on: -
